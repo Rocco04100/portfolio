@@ -70,12 +70,12 @@ img {
   max-width: 50%;
   margin: 0;
 }
-.title .greeting h1::after{
- content: "👋";
- display: inline-block;
+.title .greeting h1::after {
+  content: "👋";
+  display: inline-block;
 }
-.title .greeting h1:hover::after{
- animation: wave 1s ease-in-out forwards;
+.title .greeting h1:hover::after {
+  animation: wave 1s ease-in-out forwards;
 }
 .title .picture {
   display: block;
@@ -85,12 +85,12 @@ img {
 .title .picture img {
   border-radius: 50px;
 }
-.title .contact ul{
+.title .contact ul {
   display: flex;
   justify-content: center;
   margin-bottom: 170px;
 }
-.title .contact ul li a{
+.title .contact ul li a {
   display: block;
   margin: 0 10px;
 }
@@ -102,20 +102,19 @@ img {
   animation: pointdown 1000ms infinite alternate-reverse;
 }
 @keyframes wave {
-  0%{
-      transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
-  35%{
+  35% {
     transform: rotate(35deg);
     font-size: 4rem;
   }
-  50%{
+  50% {
     transform: rotate(-15deg);
     font-size: 3rem;
   }
-  100%{
-      transform: rotate(0deg);
-      
+  100% {
+    transform: rotate(0deg);
   }
 }
 @keyframes pointdown {
@@ -128,20 +127,18 @@ img {
 }
 /* >>>>>>>>>>>ABOUT<<<<<<<<<<<<< */
 
-.about{
+.about {
   text-align: center;
 }
-.about .expierence ul{
+.about .expierence ul {
   text-align: left;
 }
-.about .expierence ul li p{
+.about .expierence ul li p {
   margin-left: 30px;
 }
 .about .arrow {
   margin: 20px auto;
 }
-
-
 
 /* >>>>>>>>>>>UTIL<<<<<<<<<<<<< */
 .container {
@@ -169,7 +166,7 @@ img {
   line-height: 1.5;
   font-weight: normal;
 }
-.text-sm{
+.text-sm {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: normal;
