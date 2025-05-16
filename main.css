@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: gainsboro;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+/* <><><><><><><>NAVBAR<><><><><><><><><><><><> */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: gainsboro;
+  padding: 5px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container ul {
+  display: flex;
+}
+.navbar .container ul li a {
+  display: block;
+  margin: 10px;
+  padding-right: 20px;
+  border-right: 3px solid black;
+}
+.navbar .container ul li a:hover {
+  transition: 0.2s;
+  color: rgb(57, 111, 152);
+}
+.navbar .container ul li:last-child a {
+  border-right: none;
+  padding-right: none;
+}
+
+/* <><><><><><>><>TITLE PAGE<><><><><><><><> */
+.title {
+  padding: 10px 20px;
+}
+.title .container {
+  display: flex;
+  margin-bottom: 100px;
+}
+.title .greeting {
+  max-width: 50%;
+  margin: 0;
+}
+.title .greeting h1::after{
+ content: "👋";
+ display: inline-block;
+}
+.title .greeting h1:hover::after{
+ animation: wave 1s ease-in-out forwards;
+}
+.title .picture {
+  display: block;
+  margin: 50px 150px;
+  text-align: center;
+}
+.title .picture img {
+  border-radius: 50px;
+}
+.title .contact ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 170px;
+}
+.title .contact ul li a{
+  display: block;
+  margin: 0 10px;
+}
+.title .arrow {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
+@keyframes wave {
+  0%{
+      transform: rotate(0deg);
+  }
+  35%{
+    transform: rotate(35deg);
+    font-size: 4rem;
+  }
+  50%{
+    transform: rotate(-15deg);
+    font-size: 3rem;
+  }
+  100%{
+      transform: rotate(0deg);
+      
+  }
+}
+@keyframes pointdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(24px);
+  }
+}
+/* >>>>>>>>>>>ABOUT<<<<<<<<<<<<< */
+
+.about{
+  text-align: center;
+}
+.about .expierence ul{
+  text-align: left;
+}
+.about .expierence ul li p{
+  margin-left: 30px;
+}
+.about .arrow {
+  margin: 20px auto;
+}
+
+
+
+/* >>>>>>>>>>>UTIL<<<<<<<<<<<<< */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.text-xl {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.text-lg {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.text-md {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.text-sm{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.arrow {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
