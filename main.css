@@ -11,7 +11,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: gainsboro;
+  background-image: radial-gradient(800px, white,rgb(200,200,200));
 }
 a {
   text-decoration: none;
@@ -64,7 +64,7 @@ img {
 }
 .title .container {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .title .greeting {
   max-width: 50%;
@@ -79,18 +79,22 @@ img {
 }
 .title .picture {
   display: block;
-  margin: 50px 150px;
+  margin: 50px 50px;
   text-align: center;
 }
 .title .picture img {
   border-radius: 50px;
+  width: 400px;
+  height: auto;
+  transform: rotate(90deg);
+  margin-bottom: 20px;
 }
-.title .contact ul {
+.title .git-in ul {
   display: flex;
   justify-content: center;
-  margin-bottom: 170px;
+  margin-bottom: 80px;
 }
-.title .contact ul li a {
+.title .git-in ul li a {
   display: block;
   margin: 0 10px;
 }
@@ -140,6 +144,25 @@ img {
   margin: 20px auto;
 }
 
+/* >>>>>>>>>>>Contact Me<<<<<<<<<<<<< */
+.contact{
+  color: gainsboro;
+  background-color: #282a35;
+  overflow: hidden;
+}
+
+.contact .title{
+  text-align: center;
+}
+.contact .info{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+.scroll-zone {
+  height: 200px; 
+  background-color: #282a35;
+}
 /* >>>>>>>>>>>UTIL<<<<<<<<<<<<< */
 .container {
   max-width: 900px;
@@ -177,4 +200,67 @@ img {
   width: 100%;
   text-align: center;
   animation: pointdown 1000ms infinite alternate-reverse;
+}
+
+/* >>>>>>>>>>>Media Queries<<<<<<<<<<<<< */
+@media(max-width: 650px){
+  .text-xxl {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.text-lg {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.text-md {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+.text-sm {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+}
+
+@media (max-width: 480px){
+  .text-xxl {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.text-xl {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 600;
+}
+.text-lg {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 300;
+}
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: normal;
+}
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1;
+  font-weight: normal;
+}
+.navbar{
+  font-size: .8rem;
+}
+.title .picture{
+  margin: 50px 15px
+}
 }
