@@ -11,7 +11,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-image: radial-gradient(800px, white,rgb(200,200,200));
+  background-image: radial-gradient(800px, white, rgb(200, 200, 200));
 }
 a {
   text-decoration: none;
@@ -145,22 +145,22 @@ img {
 }
 
 /* >>>>>>>>>>>Contact Me<<<<<<<<<<<<< */
-.contact{
+.contact {
   color: gainsboro;
   background-color: #282a35;
   overflow: hidden;
 }
 
-.contact .title{
+.contact .title {
   text-align: center;
 }
-.contact .info{
+.contact .info {
   display: flex;
   justify-content: space-between;
   margin: 0 100px;
 }
 .scroll-zone {
-  height: 200px; 
+  height: 200px;
   background-color: #282a35;
 }
 /* >>>>>>>>>>>UTIL<<<<<<<<<<<<< */
@@ -203,64 +203,74 @@ img {
 }
 
 /* >>>>>>>>>>>Media Queries<<<<<<<<<<<<< */
-@media(max-width: 650px){
+@media (max-width: 700px) {
+  .contact .info {
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2;
+  }
+}
+@media (max-width: 650px) {
   .text-xxl {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  font-weight: 700;
-}
-.text-xl {
-  font-size: 2.2rem;
-  line-height: 1.5;
-  font-weight: 600;
-}
-.text-lg {
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: normal;
-}
-.text-md {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: normal;
-}
-.text-sm {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: normal;
-}
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .text-xl {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .text-lg {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+  .text-md {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+  .text-sm {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+  .title .greeting h1::after {
+    content: "";
+  }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .text-xxl {
-  font-size: 1.8rem;
-  line-height: 1;
-  font-weight: 700;
-}
-.text-xl {
-  font-size: 1.8rem;
-  line-height: 1;
-  font-weight: 600;
-}
-.text-lg {
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 300;
-}
-.text-md {
-  font-size: 1.2rem;
-  line-height: 1;
-  font-weight: normal;
-}
-.text-sm {
-  font-size: 0.9rem;
-  line-height: 1;
-  font-weight: normal;
-}
-.navbar{
-  font-size: .8rem;
-}
-.title .picture{
-  margin: 50px 15px
-}
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .text-xl {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+  .text-lg {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 300;
+  }
+  .text-md {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+  .text-sm {
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+  .navbar {
+    font-size: 0.6rem;
+  }
+  .title .picture {
+    margin: 50px 15px;
+  }
 }
