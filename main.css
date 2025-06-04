@@ -134,10 +134,10 @@ img {
 .about {
   text-align: center;
 }
-.about .expierence ul {
+.about .experience ul {
   text-align: left;
 }
-.about .expierence ul li p {
+.about .experience ul li p {
   margin-left: 30px;
 }
 .about .arrow {
@@ -146,8 +146,6 @@ img {
 
 /* >>>>>>>>>>>Contact Me<<<<<<<<<<<<< */
 .contact {
-  color: gainsboro;
-  background-color: #282a35;
   overflow: hidden;
 }
 
@@ -161,7 +159,6 @@ img {
 }
 .scroll-zone {
   height: 200px;
-  background-color: #282a35;
 }
 /* >>>>>>>>>>>UTIL<<<<<<<<<<<<< */
 .container {
@@ -200,6 +197,10 @@ img {
   width: 100%;
   text-align: center;
   animation: pointdown 1000ms infinite alternate-reverse;
+}
+.dark{
+  color: gainsboro;
+  background-color: #282a35;
 }
 
 /* >>>>>>>>>>>Media Queries<<<<<<<<<<<<< */
