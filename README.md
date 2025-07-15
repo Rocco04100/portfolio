@@ -5,3 +5,5 @@ This is the source code for Rocco DeMartino's personal portfolio website. It sho
 ## Technologies Used
 
 Built with HTML and CSS.
+
+## Access using the link in the about section of this repository
